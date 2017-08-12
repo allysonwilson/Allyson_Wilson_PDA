@@ -1,5 +1,5 @@
 require('minitest/autorun')
-require_relative('../hash_array_pda')
+require_relative('../hash_array_pda.rb')
 
 class TestBedTimeStories < Minitest::Test
 
@@ -7,13 +7,14 @@ class TestBedTimeStories < Minitest::Test
 
 
 
-    @books = [
-      { bed_time_stories: [] ,
+    @books = 
+      {
+        bed_time_stories: [] ,
         classic: "Gruffalo's Child" ,
-        current: "Super Swooper Dinosaur",
+        current: "Super Swooper Dinosaur" ,
         poetry: "Dragon Poems"
       }
-    ]
+
   end
 
 
