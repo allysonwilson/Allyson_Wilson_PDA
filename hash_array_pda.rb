@@ -4,17 +4,15 @@
 #   @books = books
 #   @bed_time_stories = []
 # end
-# @books = [
-#   { bed_time_stories: [] ,
-#     classic: "Gruffalo's Child" ,
-#     current: "Super Swooper Dinosaur",
-#     poetry: "Dragon Poems"
-#   }
-# ]
+
 
 def favorite_book(books)
-  return books[:current]
+  return books[0][:current]
 end
 
+def bed_time_stories(book)
+  bed_time_stories = []
+  return bed_time_stories.push(book)
+end
 
 # end
